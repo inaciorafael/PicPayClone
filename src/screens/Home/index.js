@@ -1,5 +1,6 @@
 import React from "react";
 import { MaterialCommunityIcons, AntDesign } from "@expo/vector-icons";
+import { StatusBar } from 'react-native';
 
 import {
   Wrapper,
@@ -19,6 +20,7 @@ import Banner from '../../components/Banner';
 export default function Home() {
   return (
     <Wrapper>
+      <StatusBar backgroundColor='#000' barStyle='light-content' />
       <Container>
         <Header>
           <MaterialCommunityIcons
