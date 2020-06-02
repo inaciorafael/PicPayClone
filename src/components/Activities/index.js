@@ -1,5 +1,6 @@
 import React from "react";
 import { Feather, MaterialCommunityIcons , AntDesign} from '@expo/vector-icons';
+import { StatusBar } from 'react-native';
 
 import {
   Container,
@@ -24,8 +25,10 @@ import {
 import avatar from "../../images/avatar.png";
 
 export default function Activities() {
+  
   return (
     <Container>
+      <StatusBar barStyle='light-content' />
       <Header>
         <Title>Atividades</Title>
       </Header>
@@ -33,27 +36,27 @@ export default function Activities() {
         <CardHeader>
           <Avatar source={avatar} />
           <Description>
-            <Bold>Você</Bold> pagou a <Bold>@kamilionsquad</Bold>
+            <Bold>Você</Bold> pagou a <Bold>@rafaelinacio</Bold>
           </Description>
         </CardHeader>
         <CardBody>
-          <UserName>KamillionSquad</UserName>
+          <UserName>Rafael Inácio</UserName>
         </CardBody>
         <CardFooter>
           <Details>
-            <Value>R$18,00</Value>
+            <Value>R$50,00</Value>
             <Divider />
                 <Feather name='lock' color='#fff' size={14} />
-                <Data>Há 2 anos</Data>
+                <Data>Há 9 anos</Data>
           </Details>
           <Actions>
               <Option>
                 <MaterialCommunityIcons name='comment-outline' size={14} color='#fff' />
-                <OptionLabel>0</OptionLabel>
+                <OptionLabel>21</OptionLabel>
               </Option>
               <Option>
                 <AntDesign name='hearto' size={14} color='#fff' />
-                <OptionLabel>0</OptionLabel>
+                <OptionLabel>4</OptionLabel>
               </Option>
           </Actions>
         </CardFooter>
