@@ -12,3 +12,4 @@ Imagens do App.
 * styled-components
 * react-navigation
 * expo
+* react-native-vector-icons
